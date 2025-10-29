@@ -1,0 +1,26 @@
+name: Unzip geopsypack
+
+on:
+  push:
+    paths:
+      - 'geopsypack.zip'
+
+jobs:
+  unzip:
+    permissions:      # <--- AÑADE ESTA LÍNEA
+      contents: write # <--- Y ESTA LÍNEA
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4 # Actualizado a v4, la más reciente
+
+      - name: Unzip albion.zip
+        run: |
+          unzip -o albion.zip -d ./
+          rm albion.zip
+
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Descomprimido el archivo geopsypack.zip'
+          branch: main
