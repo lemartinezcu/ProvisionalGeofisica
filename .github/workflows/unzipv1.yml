@@ -9,15 +9,15 @@ jobs:
   unzip:
     permissions:      # <--- AÑADE ESTA LÍNEA
       contents: write # <--- Y ESTA LÍNEA
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4 # Actualizado a v4, la más reciente
 
-      - name: Unzip albion.zip
+      - name: Unzip geopsypack.zip
         run: |
-          unzip -o albion.zip -d ./
-          rm albion.zip
+          unzip -o geopsypack.zip -d ./
+          rm geopsypack.zip
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v4
