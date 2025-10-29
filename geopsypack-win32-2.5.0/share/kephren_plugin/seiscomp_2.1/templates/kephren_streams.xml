@@ -1,0 +1,19 @@
+  <proc name="kephren_3x100">
+    <tree>
+      <input name="C1Z" channel="Z" location="" rate="100"/>
+      <input name="C1N" channel="N" location="" rate="100"/>
+      <input name="C1E" channel="E" location="" rate="100"/>
+      <node stream="C1"/>
+    </tree>
+  </proc>
+  <proc name="kephren_6x100">
+    <tree>
+      <input name="C1Z" channel="Z" location="" rate="100"/>
+      <input name="C1N" channel="N" location="" rate="100"/>
+      <input name="C1E" channel="E" location="" rate="100"/>
+      <input name="C2Z" channel="Z" location="" rate="100"/>
+      <input name="C2N" channel="N" location="" rate="100"/>
+      <input name="C2E" channel="E" location="" rate="100"/>
+      <node stream="CX"/>
+    </tree>
+  </proc>

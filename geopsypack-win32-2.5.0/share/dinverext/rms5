@@ -1,0 +1,12 @@
+#!/bin/bash
+# Calculate Root Mean Square of parameters relative to [ 5, 5, 5, ...]
+
+cat parameters | awk '
+BEGIN {misfit = 0;n=0}
+{
+  diff = 5-$0
+  misfit += diff*diff
+  n++
+}
+END { print sqrt(misfit)/n }
+' > misfit

@@ -1,0 +1,13 @@
+Copy 220_Kephren directory into your seiscomp data structure
+(assumed to be in ~/seiscomp):
+
+  cp -r 220_kephren ~/seiscomp/acquisition/templates/source
+
+Eventually change 220 to another number if it already exist.
+Kephren plugin will appear automatically in the list of available
+plugins when configuring a station.
+
+Edit streams.xml and add StreamProcessor for kephren_plugin listed
+in kephren_streams.xml
+
+  vi ~/seiscomp/acquisition/templates/streams.xml

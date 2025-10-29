@@ -1,0 +1,22 @@
+This folder contains various examples to compute dispersion curves.
+
+1. From 'test.model', you can compute it with 'gpdc' command line (which makes use of this library).
+   The following command output the fundamental and the 1st higher mode of Rayleigh. See option
+   '-h' for more details.
+
+  gpdc test.model -R 2 -n 30
+
+2. Using a Fortran code. Set the correct paths in 'Fortran/Makefile' and run 'make'
+
+  cd Fortran
+  vi Makefile
+  make
+  ./gpdcfor
+
+3. Using a C code. Set the correct paths in 'C/Makefile' and run 'make'
+
+  cd C
+  vi Makefile
+  make
+  ./gpdcc
+

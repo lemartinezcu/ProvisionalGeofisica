@@ -1,0 +1,6 @@
+To build this plugin example, run:
+
+ qmake
+ make
+
+To run inversions with this plugin in Dinver, click on 'Search' upon startup and add this path to the list of paths to search. After clicking 'Ok', you should see this plugin in the list of available plugins.

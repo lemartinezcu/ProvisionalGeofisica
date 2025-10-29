@@ -1,0 +1,2494 @@
+﻿<Environment platform="win32" release="2.5.0">
+  <basePath>E:/geopsy/files/geopsypack-win32-2.5.0</basePath>
+  <info>info.xml</info>
+  <Object name="ArrayCore" version="2.0.1" license="gpl2" category="Geopsy library" type="Library">
+    <description>Core objects for array processing of ambient vibrations</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <dependency name="lapack" version="3.1.0"/>
+    <dependency name="blas" version="3.1.0"/>
+    <setting type="key" application="ArrayCore" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="ArrayCore" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="ArrayCore" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="ArrayCore" path=""/>
+    <File>
+      <source>lib/ArrayCore2.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/ArrayCore.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/ArrayCore.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/ArrayCore.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/ArrayCore.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="ArrayGui" version="0.2.0" license="gpl2" category="Geopsy library" type="Library">
+    <description>Gui objects for array processing of ambient vibrations</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpGuiWave" version="0.6.1"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="ArrayCore" version="2.0.1"/>
+    <setting type="key" application="ArrayGui" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="ArrayGui" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="ArrayGui" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="ArrayGui" path=""/>
+    <File>
+      <source>lib/ArrayGui0.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/ArrayGui.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/ArrayGui.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/ArrayGui.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/ArrayGui.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="DinverCore" version="0.9.4" license="gpl2" category="Dinver library" type="Library">
+    <description>Dinver core library: implementation of core engine for Neighborhood Algorithm modified after Wathelet (2008).</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="DinverCore" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="DinverCore" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="DinverCore" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="DinverCore" path=""/>
+    <File>
+      <source>lib/DinverCore0.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/DinverCore.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/DinverCore.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/DinverCore.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/DinverCore.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>share/C</source>
+      <dest>share/DinverCore</dest>
+    </File>
+    <File>
+      <source>share/Cpp</source>
+      <dest>share/DinverCore</dest>
+    </File>
+    <File>
+      <source>share/Fortran</source>
+      <dest>share/DinverCore</dest>
+    </File>
+    <File>
+      <source>share/Rosenbrock</source>
+      <dest>share/DinverCore</dest>
+    </File>
+    <File>
+      <source>share/config.pri</source>
+      <dest>share/DinverCore</dest>
+    </File>
+  </Object>
+  <Object name="DinverDCCore" version="1.7.0" license="gpl2" category="Dinver library" type="Library">
+    <description>Core objects of dinverdc plugin: inversion of dispersion curves and related objects.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <setting type="key" application="DinverDCCore" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="DinverDCCore" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="DinverDCCore" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="DinverDCCore" path=""/>
+    <File>
+      <source>lib/DinverDCCore1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/DinverDCCore.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/DinverDCCore.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/DinverDCCore.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/DinverDCCore.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="DinverDCGui" version="0.2.0" license="gpl2" category="Dinver library" type="Library">
+    <description>Gui objects of dinverdc plugin: inversion of dispersion curves and related objects.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpGuiWave" version="0.6.1"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <setting type="key" application="DinverDCGui" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="DinverDCGui" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="DinverDCGui" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="DinverDCGui" path=""/>
+    <File>
+      <source>lib/DinverDCGui0.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/DinverDCGui.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/DinverDCGui.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/DinverDCGui.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/DinverDCGui.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="DinverGui" version="0.2.1" license="gpl2" category="Dinver library" type="Library">
+    <description>Graphical components of dinver core engine.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <setting type="key" application="DinverGui" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="DinverGui" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="DinverGui" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="DinverGui" path=""/>
+    <File>
+      <source>lib/DinverGui0.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/DinverGui.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/DinverGui.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/DinverGui.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/DinverGui.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="GeopsyCore" version="3.5.0" license="lgpl21" category="Geopsy library" type="Library">
+    <description>Core library for geopsy signal database: signal processing and signal accessibility. Reads many seismic formats and can access seed links through a high level API.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QtScript" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="dfftpack" version="4.0.2"/>
+    <dependency name="mseed" version="2.5.3"/>
+    <setting type="key" application="GeopsyCore" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="GeopsyCore" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="GeopsyCore" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="GeopsyCore" path=""/>
+    <File>
+      <source>lib/GeopsyCore3.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/GeopsyCore.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsyCore.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsyCore.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsyCore.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="GeopsyGui" version="2.11.0" license="lgpl21" category="Geopsy library" type="Library">
+    <description>Gui part of geopsy core librairies. The main object is an efficient signal plot. Interface for geopsy plugins.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QtScript" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <setting type="key" application="GeopsyGui" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="GeopsyGui" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="GeopsyGui" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="GeopsyGui" path=""/>
+    <File>
+      <source>lib/GeopsyGui2.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/GeopsyGui.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsyGui.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsyGui.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsyGui.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="GeopsyPackCore" version="1.1.1" license="gpl2" category="install" type="StaticLibrary">
+    <description></description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="GeopsyPackCore" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="GeopsyPackCore" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="GeopsyPackCore" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="GeopsyPackCore" path=""/>
+    <File>
+      <source>lang/GeopsyPackCore.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsyPackCore.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsyPackCore.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsyPackCore.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="GeopsySLink" version="1.0.0" license="gpl2" category="Geopsy library" type="Library">
+    <description>Core components for the management of seedlink stream</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QtNetwork" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="slink" version="2.5.3"/>
+    <setting type="key" application="GeopsySLink" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="GeopsySLink" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="GeopsySLink" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="GeopsySLink" path=""/>
+    <File>
+      <source>lib/GeopsySLink1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/GeopsySLink.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsySLink.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsySLink.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsySLink.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="GeopsySLinkGui" version="1.0.1" license="gpl2" category="Geopsy library" type="Library">
+    <description>Graphical components for the management of seedlink stream</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsySLink" version="1.0.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <dependency name="slink" version="2.5.3"/>
+    <setting type="key" application="GeopsySLinkGui" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="GeopsySLinkGui" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="GeopsySLinkGui" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="GeopsySLinkGui" path=""/>
+    <File>
+      <source>lib/GeopsySLinkGui1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/GeopsySLinkGui.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsySLinkGui.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsySLinkGui.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/GeopsySLinkGui.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="MonoStation" version="1.8.0" license="gpl2" category="Geopsy library" type="Library">
+    <description>Core objects of mainly geopsyhv plugin</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <setting type="key" application="MonoStation" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="MonoStation" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="MonoStation" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="MonoStation" path=""/>
+    <File>
+      <source>lib/MonoStation1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/MonoStation.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/MonoStation.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/MonoStation.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/MonoStation.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="QGpCompatibility" version="0.3.1" license="gpl2" category="Basic library" type="Library">
+    <description>Compatibility with old sesarray release. Especially, objects related to inversion: reports.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <setting type="key" application="QGpCompatibility" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="QGpCompatibility" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="QGpCompatibility" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="QGpCompatibility" path=""/>
+    <File>
+      <source>lib/QGpCompatibility0.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/QGpCompatibility.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpCompatibility.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpCompatibility.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpCompatibility.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="QGpCoreTools" version="1.23.0" license="lgpl21" category="Basic library" type="Library">
+    <description>Basic library which links only to QtCore (without references to gui features): math, expression, messages, cache, xml, tar, memory, crash,...</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <setting type="key" application="QGpCoreTools" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="QGpCoreTools" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="QGpCoreTools" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="QGpCoreTools" path=""/>
+    <File>
+      <source>lib/QGpCoreTools1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/QGpCoreTools.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpCoreTools.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpCoreTools.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpCoreTools.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="QGpCoreWave" version="1.1.0" license="lgpl21" category="Basic library" type="Library">
+    <description>Implementation of seismic wave tools: dispersion curve, elliptiicty curve, eigen function of Love and Rayleigh waves, travel time computation (1D and 3D, Podvin).</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="QGpCoreWave" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="QGpCoreWave" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="QGpCoreWave" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="QGpCoreWave" path=""/>
+    <File>
+      <source>lib/QGpCoreWave1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/QGpCoreWave.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpCoreWave.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpCoreWave.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpCoreWave.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>share/C</source>
+      <dest>share/QGpCoreWave</dest>
+    </File>
+    <File>
+      <source>share/Fortran</source>
+      <dest>share/QGpCoreWave</dest>
+    </File>
+    <File>
+      <source>share/README</source>
+      <dest>share/QGpCoreWave</dest>
+    </File>
+    <File>
+      <source>share/test.model</source>
+      <dest>share/QGpCoreWave</dest>
+    </File>
+  </Object>
+  <Object name="QGpGuiTools" version="1.13.2" license="lgpl21" category="Basic library" type="Library">
+    <description>Basic library which links to QtGui (with references to gui features): bug report, column text parser, properties dialog, dialog settings, log viewer,...</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QtNetwork" version="4.6.3"/>
+    <dependency name="QtScript" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="QGpGuiTools" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="QGpGuiTools" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="QGpGuiTools" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="QGpGuiTools" path=""/>
+    <File>
+      <source>lib/QGpGuiTools1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/QGpGuiTools.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpGuiTools.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpGuiTools.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpGuiTools.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="QGpGuiWave" version="0.6.1" license="gpl2" category="Basic library" type="Library">
+    <description>Gui objects linked to qgpcorewave library: graphical handling of dispersion curves, refraction curves,...</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <setting type="key" application="QGpGuiWave" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="QGpGuiWave" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="QGpGuiWave" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="QGpGuiWave" path=""/>
+    <File>
+      <source>lib/QGpGuiWave0.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/QGpGuiWave.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpGuiWave.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpGuiWave.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/QGpGuiWave.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="QtCore" version="4.6.3" license="lgpl21" category="" type="Library">
+    <description></description>
+    <File>
+      <source>bin/QtCore4.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>bin/mingwm10.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>bin/libgcc_s_sjlj-1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>bin/libgcc_s_dw2-1.dll</source>
+      <dest>bin</dest>
+    </File>
+  </Object>
+  <Object name="QtGui" version="4.6.3" license="lgpl21" category="" type="Library">
+    <description></description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <File>
+      <source>bin/QtGui4.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>bin/imageformats/qjpeg4.dll</source>
+      <dest>bin/imageformats</dest>
+    </File>
+    <File>
+      <source>bin/imageformats/qico4.dll</source>
+      <dest>bin/imageformats</dest>
+    </File>
+    <File>
+      <source>bin/imageformats/qgif4.dll</source>
+      <dest>bin/imageformats</dest>
+    </File>
+    <File>
+      <source>bin/imageformats/qmng4.dll</source>
+      <dest>bin/imageformats</dest>
+    </File>
+    <File>
+      <source>bin/imageformats/qsvg4.dll</source>
+      <dest>bin/imageformats</dest>
+    </File>
+    <File>
+      <source>bin/imageformats/qtiff4.dll</source>
+      <dest>bin/imageformats</dest>
+    </File>
+  </Object>
+  <Object name="QtNetwork" version="4.6.3" license="lgpl21" category="" type="Library">
+    <description></description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <File>
+      <source>bin/QtNetwork4.dll</source>
+      <dest>bin</dest>
+    </File>
+  </Object>
+  <Object name="QtScript" version="4.6.3" license="lgpl21" category="" type="Library">
+    <description></description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <File>
+      <source>bin/QtScript4.dll</source>
+      <dest>bin</dest>
+    </File>
+  </Object>
+  <Object name="QtSvg" version="4.6.3" license="lgpl21" category="" type="Library">
+    <description></description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QtGui" version="4.6.3"/>
+    <File>
+      <source>bin/QtSvg4.dll</source>
+      <dest>bin</dest>
+    </File>
+  </Object>
+  <Object name="SciFigs" version="2.6.4" license="lgpl21" category="Basic library" type="Library">
+    <description>Graphical plots: 2D plots, graphic sheet, legend, color palette.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QtSvg" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <setting type="key" application="SciFigs" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="SciFigs" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="SciFigs" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="SciFigs" path=""/>
+    <File>
+      <source>lib/SciFigs2.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/SciFigs.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/SciFigs.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/SciFigs.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/SciFigs.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="WaranCore" version="0.1.0" license="gpl2" category="Waran" type="Library">
+    <description>Core library for WARAN acquisition system.</description>
+    <setting type="key" application="WaranCore" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="WaranCore" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="WaranCore" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="WaranCore" path=""/>
+    <File>
+      <source>lib/WaranCore0.dll</source>
+      <dest>bin</dest>
+    </File>
+  </Object>
+  <Object name="blas" version="3.1.0" license="" category="" type="ExternalLibrary">
+    <description></description>
+  </Object>
+  <Object name="dfftpack" version="4.0.2" license="lgpl21" category="3rd party library" type="StaticLibrary">
+    <description>Fast Fourier Transform</description>
+    <setting type="key" application="dfftpack" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="dfftpack" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="dfftpack" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="dfftpack" path=""/>
+  </Object>
+  <Object name="dinver" version="0.5.4" license="gpl2" category="Inversion" type="GuiApplication">
+    <description>Graphical environment to solve inversion problem using Neighborhood Algorithm or Monte-Carlo sampling. Various plugins are proposed here for solving common problems. You can define your own based on the template provided here below.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverGui" version="0.2.1"/>
+    <setting type="key" application="dinver" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="dinver" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="dinver" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="dinver" path=""/>
+    <File>
+      <source>bin/dinver.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/dinver.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/dinver.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/dinver.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/dinver.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\dinver.lnk</file>
+      <target relative="BasePath">bin/dinver.exe</target>
+    </Link>
+  </Object>
+  <Object name="dinverdc" version="1.4.1" license="gpl2" category="Inversion" type="Plugin">
+    <description>Inversion of dispersion curves (Rayleigh, Love, Phase and Group velocities, higher modes), autocorrelation curves, ellipticity curves, ellipticity peak and refraction travel times. Joint inversion are also possible.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpGuiWave" version="0.6.1"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <dependency name="DinverDCGui" version="0.2.0"/>
+    <dependency name="DinverGui" version="0.2.1"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <setting type="key" application="dinverdc" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="dinverdc" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="dinverdc" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="dinverdc" path=""/>
+    <File>
+      <source>lib/dinverdc1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/dinverdc.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/dinverdc.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/dinverdc.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/dinverdc.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="dinverext" version="0.2.0" license="gpl2" category="Inversion" type="Plugin">
+    <description>Plugin to run the forward computation in an external command.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverGui" version="0.2.1"/>
+    <setting type="key" application="dinverext" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="dinverext" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="dinverext" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="dinverext" path=""/>
+    <File>
+      <source>lib/dinverext0.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/dinverext.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/dinverext.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/dinverext.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/dinverext.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>share/rms5</source>
+      <dest>share/dinverext</dest>
+    </File>
+  </Object>
+  <Object name="fastmap" version="0.1.1" license="gpl2" category="Plotting" type="GuiApplication">
+    <description>Quick drawing of precise maps</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <setting type="key" application="fastmap" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="fastmap" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="fastmap" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="fastmap" path=""/>
+    <File>
+      <source>bin/fastmap.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/fastmap.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/fastmap.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/fastmap.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/fastmap.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\fastmap.lnk</file>
+      <target relative="BasePath">bin/fastmap.exe</target>
+    </Link>
+  </Object>
+  <Object name="fftw3" version="3.1.2" license="gpl2" category="" type="ExternalLibrary">
+    <description></description>
+  </Object>
+  <Object name="figue" version="1.5.3" license="gpl2" category="Plotting" type="GuiApplication">
+    <description>Figure edition. A graphical tool to merge various plots picked in all other geopsy softwares. Creating XY plot from command line is a breeze. It can also export to ps, pdf and bitmap image formats.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <setting type="key" application="figue" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="figue" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="figue" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="figue" path=""/>
+    <File>
+      <source>bin/figue.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/figue.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/figue.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/figue.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/figue.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\figue.lnk</file>
+      <target relative="BasePath">bin/figue.exe</target>
+    </Link>
+  </Object>
+  <Object name="geopsy" version="2.9.0" license="gpl2" category="Signal Processing" type="GuiApplication">
+    <description>Graphical environment to view, organize and process signals. Most of the geophysical file formats are automatically recognized. Geopsy features can be extended through plugin tools. A selection is available here below.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QtScript" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <dependency name="GeopsySLink" version="1.0.0"/>
+    <dependency name="GeopsySLinkGui" version="1.0.1"/>
+    <dependency name="slink" version="2.5.3"/>
+    <dependency name="fftw3" version="3.1.2"/>
+    <setting type="key" application="geopsy" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsy" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsy" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="geopsy" path=""/>
+    <File>
+      <source>bin/geopsy.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/geopsy.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsy.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsy.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsy.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\geopsy.lnk</file>
+      <target relative="BasePath">bin/geopsy.exe</target>
+    </Link>
+  </Object>
+  <Object name="geopsyarray" version="2.5.0" license="gpl2" category="Signal Processing" type="Plugin">
+    <description>Plugin tool to extract dispersion/autocorrelation curves from arrays of stations. It includes processing for both passive and active recordings. Main contributions from &lt;a href=&quot;http://www.geo.uni-potsdam.de/mitarbeiter/Ohrnberger/ohrnberger.html&quot;&gt;M. Ohrnberger&lt;/a&gt; and A. Khoeler (University of Potsdam).</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="ArrayCore" version="2.0.1"/>
+    <dependency name="ArrayGui" version="0.2.0"/>
+    <dependency name="QGpGuiWave" version="0.6.1"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverGui" version="0.2.1"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <setting type="key" application="geopsyarray" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsyarray" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsyarray" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="geopsyarray" path=""/>
+    <File>
+      <source>lib/geopsyarray2.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/geopsyarray.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyarray.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyarray.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyarray.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="geopsydamping" version="1.6.0" license="gpl2" category="Signal Processing" type="Plugin">
+    <description>Plugin tool to compute damping: based on random decrement for a single station measurement. Based on original Phd work of F. Dunant (LGIT, 2005, &lt;a href=&quot;http://tel.archives-ouvertes.fr/docs/00/33/58/85/PDF/these-DUNAND-Vulnerabilite-Bruit-de-fond.pdf&quot;&gt;These_fdunand.pdf&lt;/a&gt;).</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <setting type="key" application="geopsydamping" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsydamping" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsydamping" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="geopsydamping" path=""/>
+    <File>
+      <source>lib/geopsydamping1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/geopsydamping.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsydamping.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsydamping.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsydamping.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="geopsyfigs" version="0.2.1" license="gpl2" category="Plotting" type="Plugin">
+    <description>Plugin needed to export graphic signal from Geopsy to Figue.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <setting type="key" application="geopsyfigs" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsyfigs" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsyfigs" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="geopsyfigs" path=""/>
+    <File>
+      <source>lib/geopsyfigs0.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/geopsyfigs.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyfigs.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyfigs.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyfigs.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="geopsyhv" version="2.6.5" license="gpl2" category="Signal Processing" type="Plugin">
+    <description>Plugin tool to compute H/V spectral ratios from single station ambient vibrations. A sub-product from SESAME European project (2001-2004) with main contributions from J.-L. Chatelain (aka &apos;Gaillot&apos;), B. Guillier and P.-Y. Bard (LGIT).</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <dependency name="MonoStation" version="1.8.0"/>
+    <setting type="key" application="geopsyhv" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsyhv" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsyhv" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="geopsyhv" path=""/>
+    <File>
+      <source>lib/geopsyhv2.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/geopsyhv.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyhv.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyhv.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyhv.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="geopsynr" version="0.3.0" license="gpl2" category="Signal Processing" type="Plugin">
+    <description>Plugin tool to increase (or to try to) the signal to noise ratio in active seismic. Basic and enhanced stacking technique. T0 adjustment (even to a fraction of sampling period).</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <setting type="key" application="geopsynr" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsynr" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsynr" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="geopsynr" path=""/>
+    <File>
+      <source>lib/geopsynr0.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/geopsynr.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsynr.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsynr.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsynr.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="geopsypackinstall" version="1.0.2" license="gpl2" category="install" type="GuiApplication">
+    <description>Install/uninstall system tool for geopsy packages</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="GeopsyPackCore" version="1.1.1"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <setting type="key" application="geopsypackinstall" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsypackinstall" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsypackinstall" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="geopsypackinstall" path=""/>
+    <File>
+      <source>bin/geopsypackinstall.exe</source>
+      <dest>bin</dest>
+      <installName>uninstall.exe</installName>
+    </File>
+    <File>
+      <source>lang/geopsypackinstall.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsypackinstall.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsypackinstall.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsypackinstall.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>share/Makefile</source>
+      <dest>share/geopsypackinstall</dest>
+    </File>
+    <File>
+      <source>share/main.c</source>
+      <dest>share/geopsypackinstall</dest>
+    </File>
+    <File>
+      <source>share/uninstall.exe</source>
+      <dest>share/geopsypackinstall</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\uninstall.lnk</file>
+      <target relative="BasePath">bin/uninstall.exe</target>
+    </Link>
+  </Object>
+  <Object name="geopsyptmotion" version="1.1.9" license="gpl2" category="Signal Processing" type="Plugin">
+    <description>Plugin tool to plot particle motion from 3-component recordings (projection on all planes).</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <setting type="key" application="geopsyptmotion" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsyptmotion" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsyptmotion" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="geopsyptmotion" path=""/>
+    <File>
+      <source>lib/geopsyptmotion1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/geopsyptmotion.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyptmotion.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyptmotion.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyptmotion.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="geopsyrefra" version="1.1.1" license="gpl2" category="Signal Processing" type="Plugin">
+    <description>Plugin tool to pipe picked arrival times from Geopsy to Dinver.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <setting type="key" application="geopsyrefra" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsyrefra" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsyrefra" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="geopsyrefra" path=""/>
+    <File>
+      <source>lib/geopsyrefra1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/geopsyrefra.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyrefra.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyrefra.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsyrefra.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="geopsytfa" version="1.1.5" license="gpl2" category="Signal Processing" type="Plugin">
+    <description>Plugin tool to compute a time-frequency analysis based on Morlet wavelet. Main contributions from M. Kristekova (University of Bratislava).</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <setting type="key" application="geopsytfa" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsytfa" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="geopsytfa" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="geopsytfa" path=""/>
+    <File>
+      <source>lib/geopsytfa1.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/geopsytfa.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsytfa.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsytfa.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/geopsytfa.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpcoord" version="0.3.1" license="gpl2" category="Plotting" type="ConsoleApplication">
+    <description>Coordinate X,Y oprations: distance, azimuth, conversion from/to lat/long,...</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="gpcoord" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpcoord" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpcoord" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpcoord" path=""/>
+    <File>
+      <source>bin/gpcoord.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpcoord.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpcoord.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpcoord.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpcoord.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpcurve" version="0.1.0" license="gpl2" category="Plotting" type="ConsoleApplication">
+    <description>Curve processing: resample, cut, interpolate, derivate, integrate,... Exactly the same actions as inside Dinver (module dinvedc) but through a command line. It can also sample an analytical expression to generate functions.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="gpcurve" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpcurve" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpcurve" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpcurve" path=""/>
+    <File>
+      <source>bin/gpcurve.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpcurve.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpcurve.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpcurve.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpcurve.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpdc" version="0.3.0" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Computation of theoretical dispersion curves.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <setting type="key" application="gpdc" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpdc" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpdc" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpdc" path=""/>
+    <File>
+      <source>bin/gpdc.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpdc.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdc.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdc.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdc.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpdcmisfit" version="0.2.2" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Recomputation of misfit. Did you generate a collection of models that you want to use as the starting population for slightly different dispersion curve? No problem, correct misfits and import it.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <setting type="key" application="gpdcmisfit" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpdcmisfit" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpdcmisfit" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpdcmisfit" path=""/>
+    <File>
+      <source>bin/gpdcmisfit.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpdcmisfit.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdcmisfit.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdcmisfit.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdcmisfit.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpdcreport" version="0.3.6" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Query tool for binary inversion report produced by dinverdc. With option &apos;-pm&apos; this tool is also usefull for all report types produced by dinver (e.g. dinvermatlab, dinverext or any custom inversion plugin).</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <setting type="key" application="gpdcreport" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpdcreport" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpdcreport" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpdcreport" path=""/>
+    <File>
+      <source>bin/gpdcreport.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpdcreport.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdcreport.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdcreport.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdcreport.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpdepths" version="0.1.0" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Generates standard thicknesses (that follow a gemetrical progrssion) and corresponding 1D parameterizations.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <setting type="key" application="gpdepths" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpdepths" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpdepths" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpdepths" path=""/>
+    <File>
+      <source>bin/gpdepths.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpdepths.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdepths.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdepths.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdepths.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpdistance" version="0.1.2" license="gpl2" category="Plotting" type="ConsoleApplication">
+    <description>Calculates distances and azimuth between named points (aka stations). Uses a lookup table for station coordinates. Such lookup is difficult to implement with awk, the reason for writing it in C++.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="gpdistance" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpdistance" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpdistance" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpdistance" path=""/>
+    <File>
+      <source>bin/gpdistance.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpdistance.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdistance.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdistance.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpdistance.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpec8" version="0.1.3" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Output EC8 soil category from a 1D wave model. Classification here is based only on Vs profiles. The official classification includes other parameters not covered by this tool.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <setting type="key" application="gpec8" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpec8" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpec8" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpec8" path=""/>
+    <File>
+      <source>bin/gpec8.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpec8.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpec8.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpec8.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpec8.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpell" version="0.3.0" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Computation of theoretical ellipticity curves.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <setting type="key" application="gpell" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpell" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpell" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpell" path=""/>
+    <File>
+      <source>bin/gpell.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpell.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpell.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpell.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpell.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpfksimulator" version="0.2.1" license="gpl2" category="Signal Processing" type="GuiApplication">
+    <description>Educational tool for FK array response</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <dependency name="ArrayCore" version="2.0.1"/>
+    <setting type="key" application="gpfksimulator" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpfksimulator" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpfksimulator" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpfksimulator" path=""/>
+    <File>
+      <source>bin/gpfksimulator.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpfksimulator.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpfksimulator.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpfksimulator.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpfksimulator.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\gpfksimulator.lnk</file>
+      <target relative="BasePath">bin/gpfksimulator.exe</target>
+    </Link>
+  </Object>
+  <Object name="gpgroup2phase" version="0.1.1" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Convert group velocity dispersion curves to phase velocity. Hmm! The solution is not unique. Ok this tool scans for various possibilities.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="gpgroup2phase" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpgroup2phase" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpgroup2phase" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpgroup2phase" path=""/>
+    <File>
+      <source>bin/gpgroup2phase.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpgroup2phase.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpgroup2phase.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpgroup2phase.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpgroup2phase.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gphistogram" version="0.1.3" license="gpl2" category="Plotting" type="GuiApplication">
+    <description>Constucts interactive 2D histograms from any data set (couples X, Y).</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <setting type="key" application="gphistogram" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gphistogram" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gphistogram" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gphistogram" path=""/>
+    <File>
+      <source>bin/gphistogram.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gphistogram.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gphistogram.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gphistogram.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gphistogram.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\gphistogram.lnk</file>
+      <target relative="BasePath">bin/gphistogram.exe</target>
+    </Link>
+  </Object>
+  <Object name="gplivemodel" version="0.1.1" license="gpl2" category="Wave tool" type="GuiApplication">
+    <description>Interactive computation of theoretical dispsersion curves, ellipticity curves,... through a graphical interface which lets you playing with cursors to adjust model parameters.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <setting type="key" application="gplivemodel" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gplivemodel" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gplivemodel" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gplivemodel" path=""/>
+    <File>
+      <source>bin/gplivemodel.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gplivemodel.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gplivemodel.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gplivemodel.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gplivemodel.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\gplivemodel.lnk</file>
+      <target relative="BasePath">bin/gplivemodel.exe</target>
+    </Link>
+  </Object>
+  <Object name="gpmodel2param" version="0.2.3" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Transforms a 1D wave model into a ground parameterization that you can import inside Dinver (dinverdc plugin).</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <setting type="key" application="gpmodel2param" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpmodel2param" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpmodel2param" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpmodel2param" path=""/>
+    <File>
+      <source>bin/gpmodel2param.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpmodel2param.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpmodel2param.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpmodel2param.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpmodel2param.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpparam2model" version="0.2.2" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Generate 1D wave models given a parameter set and a parameterization definition.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <setting type="key" application="gpparam2model" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpparam2model" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpparam2model" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpparam2model" path=""/>
+    <File>
+      <source>bin/gpparam2model.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpparam2model.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpparam2model.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpparam2model.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpparam2model.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gppoisson" version="1.0.1" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>A memo for Poisson&apos;s ratio formula. Quick transform from Vp, Vs to nu and vice-versa.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="gppoisson" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gppoisson" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gppoisson" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gppoisson" path=""/>
+    <File>
+      <source>bin/gppoisson.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gppoisson.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gppoisson.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gppoisson.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gppoisson.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpprofile" version="0.2.6" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Transform a 1D wave model into a plotable curve. Can also compute a variety of useful profiles from 1D wave models: impedance, Poisson&apos;s ration, travel time average (Vs30 or VsZ).</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <setting type="key" application="gpprofile" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpprofile" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpprofile" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpprofile" path=""/>
+    <File>
+      <source>bin/gpprofile.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpprofile.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpprofile.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpprofile.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpprofile.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gprandom" version="0.1.0" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Computes random values with ran2 (uniform probability, support for lot of computations).</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="gprandom" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gprandom" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gprandom" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gprandom" path=""/>
+    <File>
+      <source>bin/gprandom.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gprandom.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gprandom.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gprandom.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gprandom.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gprefra" version="0.1.1" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Computation of theoretical refraction travel times (1D model or tilted model).</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <setting type="key" application="gprefra" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gprefra" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gprefra" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gprefra" path=""/>
+    <File>
+      <source>bin/gprefra.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gprefra.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gprefra.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gprefra.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gprefra.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpreplace" version="0.2.1" license="gpl2" category="Utilities" type="ConsoleApplication">
+    <description>Text replacement using regular expression. Support more features than grep or sed, it can handle patterns over several lines.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="gpreplace" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpreplace" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpreplace" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpreplace" path=""/>
+    <File>
+      <source>bin/gpreplace.exe</source>
+      <dest>bin</dest>
+    </File>
+  </Object>
+  <Object name="gpsh" version="0.1.3" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Computation of theoretical SH transfer function for a 1D wave model (Fortran implementation from P.-Y. Bard, LGIT).</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <setting type="key" application="gpsh" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpsh" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpsh" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpsh" path=""/>
+    <File>
+      <source>bin/gpsh.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpsh.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpsh.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpsh.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpsh.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpsignal" version="1.0.1" license="gpl2" category="Signal Processing" type="ConsoleApplication">
+    <description>Computation of custom cosine signals. Stacks of multiple frequencies and phases. Support for phase shifts between various station locations.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="gpsignal" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpsignal" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpsignal" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpsignal" path=""/>
+    <File>
+      <source>bin/gpsignal.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpsignal.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpsignal.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpsignal.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpsignal.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpsort" version="0.2.2" license="gpl2" category="Plotting" type="ConsoleApplication">
+    <description>Sort curves stored in a text file (one after the other, various columns for X, Y,...). Usefull to re-order curves produced by gpspac and pipe them to figue in the correct order (play with option &apos;-cpp&apos;).</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="gpsort" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpsort" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpsort" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpsort" path=""/>
+    <File>
+      <source>bin/gpsort.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpsort.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpsort.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpsort.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpsort.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpspac" version="0.3.0" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Computation of theoretical autocorrelation curves.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <setting type="key" application="gpspac" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpspac" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpspac" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpspac" path=""/>
+    <File>
+      <source>bin/gpspac.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpspac.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpspac.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpspac.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpspac.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gptarget" version="0.1.1" license="gpl2" category="Wave tool" type="ConsoleApplication">
+    <description>Manipulation of dinver targets through command line. This tool can add, delete, or extract curves to or from .target files.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <setting type="key" application="gptarget" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gptarget" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gptarget" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gptarget" path=""/>
+    <File>
+      <source>bin/gptarget.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gptarget.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gptarget.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gptarget.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gptarget.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gptime" version="0.1.0" license="gpl2" category="Plotting" type="ConsoleApplication">
+    <description>Converts time formats.</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <setting type="key" application="gptime" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gptime" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gptime" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gptime" path=""/>
+    <File>
+      <source>bin/gptime.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gptime.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gptime.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gptime.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gptime.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gptomoinfo" version="0.1.1" license="gpl2" category="Signal Processing" type="ConsoleApplication">
+    <description>Extract files fsrc, fsta, fobs (for tomography codes) from a geopsy database or vice-versa</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <setting type="key" application="gptomoinfo" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gptomoinfo" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gptomoinfo" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gptomoinfo" path=""/>
+    <File>
+      <source>bin/gptomoinfo.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gptomoinfo.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gptomoinfo.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gptomoinfo.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gptomoinfo.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="gpviewdcreport" version="0.1.1" license="gpl2" category="Wave tool" type="GuiApplication">
+    <description>Ploting tool for report files produced by dinverdc plugin. Provides the same output as inside Dinver graphical interface for automatic bash scripts.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpGuiWave" version="0.6.1"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverGui" version="0.2.1"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <dependency name="DinverDCGui" version="0.2.0"/>
+    <setting type="key" application="gpviewdcreport" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpviewdcreport" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="gpviewdcreport" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="gpviewdcreport" path=""/>
+    <File>
+      <source>bin/gpviewdcreport.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/gpviewdcreport.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpviewdcreport.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpviewdcreport.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/gpviewdcreport.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\gpviewdcreport.lnk</file>
+      <target relative="BasePath">bin/gpviewdcreport.exe</target>
+    </Link>
+  </Object>
+  <Object name="kephren_plugin" version="0.1.0" license="gpl2" category="Waran" type="ConsoleApplication">
+    <description>Alignment of sampling for seed stream from Kephren stations</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QtNetwork" version="4.6.3"/>
+    <dependency name="QtScript" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsySLink" version="1.0.0"/>
+    <dependency name="fftw3" version="3.1.2"/>
+    <setting type="key" application="kephren_plugin" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="kephren_plugin" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="kephren_plugin" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="kephren_plugin" path=""/>
+    <File>
+      <source>bin/kephren_plugin.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>share/seiscomp_2.1</source>
+      <dest>share/kephren_plugin</dest>
+    </File>
+    <File>
+      <source>share/seiscomp_2.5</source>
+      <dest>share/kephren_plugin</dest>
+    </File>
+    <File>
+      <source>share/seiscomp_2.6</source>
+      <dest>share/kephren_plugin</dest>
+    </File>
+  </Object>
+  <Object name="kephrenrtu" version="0.1.0" license="gpl2" category="Waran" type="ConsoleApplication">
+    <description>Kephren Ready To Use transforms titan files (using rtitan2) into sac files ready for array processing (high pass filter, time corrections, sampling alignment).</description>
+    <dependency name="QtCore" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="fftw3" version="3.1.2"/>
+    <setting type="key" application="kephrenrtu" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="kephrenrtu" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="kephrenrtu" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="kephrenrtu" path=""/>
+    <File>
+      <source>bin/kephrenrtu.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/kephrenrtu.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/kephrenrtu.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/kephrenrtu.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/kephrenrtu.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>share/titanCorrectedT0.ascfmt</source>
+      <dest>share/kephrenrtu</dest>
+    </File>
+    <File>
+      <source>share/titanUncorrectedT0.ascfmt</source>
+      <dest>share/kephrenrtu</dest>
+    </File>
+  </Object>
+  <Object name="lapack" version="3.1.0" license="" category="" type="ExternalLibrary">
+    <description></description>
+  </Object>
+  <Object name="max2curve" version="0.6.3" license="gpl2" category="Signal Processing" type="GuiApplication">
+    <description>Post processing tool for dispersion curves obtained from geopsyarray plugin tool. Mainly statistical analysis.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpGuiWave" version="0.6.1"/>
+    <setting type="key" application="max2curve" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="max2curve" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="max2curve" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="max2curve" path=""/>
+    <File>
+      <source>bin/max2curve.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/max2curve.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/max2curve.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/max2curve.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/max2curve.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\max2curve.lnk</file>
+      <target relative="BasePath">bin/max2curve.exe</target>
+    </Link>
+  </Object>
+  <Object name="mseed" version="2.5.3" license="lgpl21" category="3rd party library" type="StaticLibrary">
+    <description>Access to mini seed format</description>
+    <setting type="key" application="mseed" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="mseed" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="mseed" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="mseed" path=""/>
+  </Object>
+  <Object name="slink" version="2.5.3" license="gpl2" category="3rd party library" type="StaticLibrary">
+    <description>Access to seed link protocol</description>
+    <setting type="key" application="slink" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="slink" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="slink" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="slink" path=""/>
+  </Object>
+  <Object name="spac2disp" version="0.3.1" license="gpl2" category="Signal Processing" type="GuiApplication">
+    <description>Post processing tools for SPAC method. Check consistency between autocorr curves computed for various rings. Based on original work from Wathelet et al. (2005). Support for 1C and 3C analysis.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpGuiWave" version="0.6.1"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverGui" version="0.2.1"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <setting type="key" application="spac2disp" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="spac2disp" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="spac2disp" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="spac2disp" path=""/>
+    <File>
+      <source>bin/spac2disp.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/spac2disp.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/spac2disp.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/spac2disp.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/spac2disp.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\spac2disp.lnk</file>
+      <target relative="BasePath">bin/spac2disp.exe</target>
+    </Link>
+  </Object>
+  <Object name="structureratios" version="0.5.2" license="gpl2" category="Signal Processing" type="Plugin">
+    <description>Plugin tool to compute spectral ratios for artificial structures (buildings, bridges,...). Main contributions from J.-L. Chatelain (aka &apos;Gaillot&apos;) and B. Guillier.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <dependency name="MonoStation" version="1.8.0"/>
+    <setting type="key" application="structureratios" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="structureratios" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="structureratios" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="structureratios" path=""/>
+    <File>
+      <source>lib/structureratios0.dll</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/structureratios.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/structureratios.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/structureratios.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/structureratios.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="vslarray" version="0.1.1" license="gpl2" category="Signal Processing" type="ConsoleApplication">
+    <description>Virtual Seedlink Array: emulate a real-time WARAN acquisition from a Geopsy database. Requires the installation of Seiscomp&gt;=2.6 with mscan plugin</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <dependency name="ArrayCore" version="2.0.1"/>
+    <setting type="key" application="vslarray" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="vslarray" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="vslarray" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="vslarray" path=""/>
+    <File>
+      <source>bin/vslarray.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/vslarray.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/vslarray.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/vslarray.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/vslarray.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+  </Object>
+  <Object name="waran" version="0.1.4" license="gpl2" category="Waran" type="GuiApplication">
+    <description>Real-time analysis of ambient vibration arrays for WARAN aquisition system</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpGuiWave" version="0.6.1"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <dependency name="GeopsySLink" version="1.0.0"/>
+    <dependency name="GeopsySLinkGui" version="1.0.1"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <dependency name="ArrayCore" version="2.0.1"/>
+    <dependency name="ArrayGui" version="0.2.0"/>
+    <dependency name="slink" version="2.5.3"/>
+    <dependency name="fftw3" version="3.1.2"/>
+    <setting type="key" application="waran" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="waran" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="waran" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="waran" path=""/>
+    <File>
+      <source>bin/waran.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/waran.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/waran.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/waran.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/waran.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\waran.lnk</file>
+      <target relative="BasePath">bin/waran.exe</target>
+    </Link>
+  </Object>
+  <Object name="warangps" version="0.1.4" license="gpl2" category="Waran" type="GuiApplication">
+    <description>GPS Positioning for WARAN aquisition system. Replaces build_array for theoretical array response computation.</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QtNetwork" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <dependency name="SciFigs" version="2.6.4"/>
+    <dependency name="GeopsyCore" version="3.5.0"/>
+    <dependency name="WaranCore" version="0.1.0"/>
+    <dependency name="GeopsyGui" version="2.11.0"/>
+    <dependency name="QGpCoreWave" version="1.1.0"/>
+    <dependency name="QGpGuiWave" version="0.6.1"/>
+    <dependency name="DinverCore" version="0.9.4"/>
+    <dependency name="DinverDCCore" version="1.7.0"/>
+    <dependency name="QGpCompatibility" version="0.3.1"/>
+    <dependency name="ArrayCore" version="2.0.1"/>
+    <dependency name="ArrayGui" version="0.2.0"/>
+    <setting type="key" application="warangps" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="warangps" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="warangps" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="warangps" path=""/>
+    <File>
+      <source>bin/warangps.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/warangps.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/warangps.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/warangps.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/warangps.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\warangps.lnk</file>
+      <target relative="BasePath">bin/warangps.exe</target>
+    </Link>
+  </Object>
+  <Object name="waranmon" version="0.1.0" license="gpl2" category="Waran" type="GuiApplication">
+    <description>Station monitoring tool for WARAN aquisition system</description>
+    <dependency name="QtGui" version="4.6.3"/>
+    <dependency name="QGpCoreTools" version="1.23.0"/>
+    <dependency name="QGpGuiTools" version="1.13.2"/>
+    <setting type="key" application="waranmon" path="installpaths/binDir">$(BasePath)/bin</setting>
+    <setting type="key" application="waranmon" path="installpaths/libDir">$(BasePath)/bin</setting>
+    <setting type="key" application="waranmon" path="installpaths/shareDir">$(BasePath)/share</setting>
+    <setting type="path" application="waranmon" path=""/>
+    <File>
+      <source>bin/waranmon.exe</source>
+      <dest>bin</dest>
+    </File>
+    <File>
+      <source>lang/waranmon.de.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/waranmon.es.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/waranmon.fr.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <File>
+      <source>lang/waranmon.it.qm</source>
+      <dest>share/lang</dest>
+    </File>
+    <Link>
+      <file relative="StartMenu">Geopsy.org\waranmon.lnk</file>
+      <target relative="BasePath">bin/waranmon.exe</target>
+    </Link>
+  </Object>
+  <License name="gpl2">
+    <File>
+      <source>LICENSE.GPL2</source>
+      <dest></dest>
+    </File>
+  </License>
+  <License name="lgpl21">
+    <File>
+      <source>LICENSE.LGPL21</source>
+      <dest></dest>
+    </File>
+  </License>
+</Environment>
